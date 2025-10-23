@@ -1,0 +1,72 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>リクエストページ｜すたにゅ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>秋田駅前アニクラ～すたにゅ～</h1>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-box">ホーム</a></li>
+      <li><a href="outline.html" class="nav-box">すたにゅって？</a></li>
+      <li><a href="DJ.html" class="nav-box">DJ紹介</a></li>
+      <li><a href="request.html" class="nav-box">リクエストページ</a></li>
+      <li><a href="contact.html" class="nav-box">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="request-form">
+      <h2 class="section-title">楽曲リクエストフォーム</h2>
+      <div class="request-content">
+        <p>「この曲流してほしい！」というあなたの声をぜひ届けてください！</p>
+        <form action="submit_request.php" method="POST" class="request-form-content">
+  <div class="form-group">
+    <label for="name">お名前（ニックネーム可）:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="song">リクエスト曲名:</label>
+    <input type="text" id="song" name="song" required>
+  </div>
+
+  <div class="form-group">
+    <label for="anime">アニメタイトル（アニメでない場合はジャンル）:</label>
+    <input type="text" id="anime" name="anime">
+  </div>
+
+  <div class="form-group">
+    <label for="artist">アーティスト名:</label>
+    <input type="text" id="artist" name="artist">
+  </div>
+
+  <div class="form-group">
+    <label for="message">コメント（任意）:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+  </div>
+
+  <div class="form-group">
+    <input type="submit" value="リクエストを送信">
+  </div>
+        </form>
+
+<div class="form-notice">
+  <ul>
+    <li>リクエストは必ず採用されるとは限りません。</li>
+        <li>タイミングによっては次回以降のイベントになる場合があります。</li>
+        <li>1イベントにつき一人3曲まででお願いします。</li>
+        <li>セトリはDJがリクエストを参考に作成します。</li>
+        <li>曲の流れによっては繋げられないこともあります。ごめんなさい！</li>
+</div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
